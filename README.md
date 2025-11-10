@@ -1,8 +1,10 @@
 # Poker Equity Predictor (PyTorch)
 
-A neural network that predicts **post-flop poker hand equity** (expected share of the pot) given a hand and board state, trained on simulated data using PyTorch.
+A neural network that predicts **post-flop poker hand equity** (expected share of the pot against a random opponent hand) given a hand and board state, trained on simulated data using PyTorch.
 
 This was my first full ML project, built in my 2nd year of a BSc Mathematics degree at **Queen Mary University of London**. It demonstrates an end-to-end ML pipeline: data generation, feature engineering, model training, and evaluation.
+
+The model focuses on post-flop situations (flop, turn, and river). Pre-flop only invovles 1,326 distinct starting hands, so a simple look-up table is more appropriate there, whereas post-flop equity depends on the specific board cards and is a more interesting modelling problem.
 
 ---
 
